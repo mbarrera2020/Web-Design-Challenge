@@ -8,105 +8,95 @@
 
 </head>
 
+<!--#######################################################################
+    (1) Landing Page containing:
+        An explanation of the project.
+        Links to each visualizations page. 
+        Sidebar containing preview images of each plot, and clicking an 
+        image will go to that visualization. 
+    ########################################################################-->
+
 <body>
   <!-- Header -->
-  <h3>Welcome to MB's Web-Design-Challenge Home Page!</h3>
+  <h1></h1>
+  <h1></h1>
+  <h1 style="color:blue", style="font-family: Arial", style="font-size: larger">
+    <strong>
+     Welcome to the Weather Data Plotting Website!
+  </strong></h1>
+  <h2></h2>
+
+  <img src="Images/weather01.jpg"> 
+  <h3></h3>
+
+  <h3>This is a 'Weather Data Plotting' visualization dashboard website using visualizations 
+    created from prior projects. Individual pages have been created for each plot and a means
+    to navigate between them. These pages will contain the visualizations and their corresponding 
+    explanations. The landing page shows a comparison of all of the plots, and another page where 
+    to view the data used to build them.</h3>
+    <h3></h3>
+
+    <!-- Row with 2 columns -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <img src="Images/weather01.jpg"> 
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6 justify-content-end">
+        <h4>This is a 'Weather Data Plotting' visualization dashboard website using visualizations 
+          created from prior projects. Individual pages have been created for each plot and a means
+          to navigate between them. These pages will contain the visualizations and their corresponding 
+          explanations. The landing page shows a comparison of all of the plots, and another page where 
+          to view the data used to build them.</h4>
+      </div>
+    </div>
 
 <!-- ######################################################################################## -->
-<!-- Navigation Bar setup-->
+<!-- Begin:  Navigation Bar setup -->
 <!-- ######################################################################################## -->
     <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">test Link1 </a>
-      </li>
+      
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <!-- NavBar: Plots dropdown -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarPlots" role="button" \
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots
-          </a>
+          
+          <!--<a class="nav-link dropdown-toggle" href="#" id="navbarPlots" role="button" \
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" Plots
+          </a> -->
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
+                role="button" data-toggle="dropdown">Plots</a>  
           <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-            <a class="dropdown-item" href="#">Max Temperature</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+            <a class="dropdown-item" href="Pages/maxtemperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="Pages/humdity.html">Humidity</a>
+            <a class="dropdown-item" href="Pages/cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="Pages/windspeed.html">Wind Speed</a> </div>
+            <div class="dropdown-divider"></div> 
         </li>
+
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
         <!-- NavBar: Comparison web page link -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         <li class="nav-item">
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="Pages/comparison.html">Comparison</a>
         </li>
-        
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
 
-
-<!-- ######################################################################################## -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- <ul class="navbar-nav mr-auto"> -->
-      <ul class="navbar-nav mr-auto">  
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- NavBar: Plots dropdown -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarPlots" role="button" \
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-            <a class="dropdown-item" href="#">Max Temperature</a>
-            <a class="dropdown-item" href="#">Humidity</a>
-            <a class="dropdown-item" href="#">Cloudiness</a>
-            <a class="dropdown-item" href="#">Wind Speed</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-        <!-- NavBar: Comparison web page link -->
+        <!-- NavBar: Data web page link -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         <li class="nav-item">
         <li class="nav-item">
-          <a class="nav-link" href="#">Comparison</a>
+          <a class="nav-link" href="Pages/data.html">Data</a>
         </li>
-        
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- NavBar: Disabled -- not in use -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- 
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>  
-        -->
+      
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-<!-- ####### End of Navigation Bar ####### -->
-
-    <!-- 7 pages including the following: -->
+<!-- ######################################################################################## -->
+<!-- End:  Navigation Bar setup -->
+<!-- ######################################################################################## -->
 
     <!--#######################################################################
     (1) Landing Page containing:
@@ -116,69 +106,28 @@
         to that visualization. 
         ########################################################################-->
 
-    <!-- image -->
-    <!-- <img src="images/comparison-lg.png" alt="Comparison Large" width="200" height="300"> -->
+    <img src="Images/landingResize.png" alt="Landing Resize"> 
+    <br>
+    <br>
+    <img src="Images/landing-sm.png" alt="Landing Small"> 
+    <br>
+   
+    <!--
+    <img src="Images/landingResize.png" alt="Comparison Large" width="200" height="300"> 
+    <img src="Images/landing-sm.png" alt="Comparison Small" width="200" height="300"> 
+    -->
     
-    <img src="images/comparison-lg.png" alt="Comparison Large"> 
-    <br>
-    <br>
-    <img src="images/comparison-sm.png" alt="Comparison Small"> 
-    <br>
-   
-    <img src="images/comparison-lg.png" alt="Comparison Large" width="200" height="300"> 
-    <br>
-    <br>
-    <img src="images/comparison-sm.png" alt="Comparison Small" width="100" height="200"> 
-    <br>
-   
-    <!--#######################################################################
-    (2) Visualization page #1:  Latitude (Large screen)
-        ########################################################################-->
+    <!-- just for fun -->
+    <h3>Just for fun...enjoy some music on me :) age!</h3>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.youtube.com/watch?v=7XhkVHWlaaw">Bruno Mars Greatest Hits Full Album 2021</a>
+      <br>
+    </li>
 
-
-    <!--#######################################################################
-    (3) Visualization page #2:  Latitude (Small screen)
-        ########################################################################-->
-
-
-    <!--#######################################################################
-    (4) Visualization page #3:  
-        ########################################################################-->
-
-
-    <!--#######################################################################
-    (5) Visualization page #4:  
-        ########################################################################-->
-
-
-    <!--#######################################################################
-    (6) Comparisons page
-        ########################################################################-->
-
-
-    <!--#######################################################################
-    (7) Data page
-        ########################################################################-->
-        <img src="images/data-lg.png" alt="Comparison Large"> 
-        <br>
-        <br>
-        <img src="images/data-sm.png" alt="Comparison Small"> 
-        <br>
-
-
-    <!-- Bold Link -->
-    <strong><a href="https://www.youtube.com/watch?v=_bcuw5T2MOA">Bruno Mars Greatest Hits Full Album 2020</a></strong>
-    <br>
-    <br>
-
-    <!-- how to display photo / image -->
-    <img src="meetKB.jpg">
-    <br>
-    <br>
-
-    <img src="meetRM001.jpg">
-    <img src="meetRM.jpg">
-    <br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 
 </body
 
