@@ -40,63 +40,52 @@
     </section>
   </main>
 </div>
-
-<!--
-<div class="container">
-    Row 1
-    <div class="row">
-      <div class="col-md-12">
-      -->
-  
+ 
 <!-- ######################################################################################## -->
-<!-- Begin:  Navigation Bar setup -->
+<!-- Begin:  Navigation Bar -->
 <!-- ######################################################################################## -->
     <ul class="nav justify-content-end">
       
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <!-- NavBar: Plots dropdown -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
-                role="button" data-toggle="dropdown">Plots</a>  
-          <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-            <a class="dropdown-item" href="Pages/maxtemperature.html">Max Temperature</a>
-            <a class="dropdown-item" href="Pages/humidity.html">Humidity</a>
-            <a class="dropdown-item" href="Pages/cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="Pages/windspeed.html">Wind Speed</a> </div>
-            <div class="dropdown-divider"></div> 
-        </li>
-
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- NavBar: Plots dropdown -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
+           role="button" data-toggle="dropdown">Plots</a>  
+        <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
+         <a class="dropdown-item" href="Pages/maxtemperature.html">Max Temperature</a>
+         <a class="dropdown-item" href="Pages/humidity.html">Humidity</a>
+         <a class="dropdown-item" href="Pages/cloudiness.html">Cloudiness</a>
+         <a class="dropdown-item" href="Pages/windspeed.html">Wind Speed</a> 
+        </div>
+        <div class="dropdown-divider">
+        </div> 
+      </li>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
         <!-- NavBar: Comparison web page link -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         <li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link" href="Pages/comparison.html">Comparison</a>
+      <li class="nav-item">
+        <a class="nav-link" href="Pages/comparison.html">Comparison</a>
         </li>
-
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
         <!-- NavBar: Data web page link -->
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         <li class="nav-item">
         <li class="nav-item">
           <a class="nav-link" href="Pages/data.html">Data</a>
         </li>
-      
       </ul>
-
       
       <div class="row">
         <div class="col">
           <h5 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
               style="font-size: larger"></h5>
           <div class="alert alert-primary" role="alert">
-              LATITUDE
           </div>
-            
         </div>
       </div>
 
 <!-- ######################################################################################## -->
-<!-- End:  Navigation Bar setup -->
+<!-- End:  Navigation Bar -->
 <!-- ######################################################################################## -->
 
     <!--#######################################################################
@@ -109,6 +98,8 @@
   
         <div class="container">
           <div class="row">
+          <!-- 1st column-->
+          <div class="col-md-8">
             <h5 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
                 style="font-size: larger"></h5>
             <h5 class="display-4">Summary: Latitude vs. X</h5>
@@ -119,29 +110,70 @@
               <strong>
               <img src="Resources/assets/images/Fig1.png"> 
               </strong></h3>
+            </div>
+            <p> The purpose of this project was to analyze how weather changes as you get closer to the equator.  
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
+                on over 500 cities.
 
-              <h5 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
+                After assembling the dataset, we sued Matplotlib to plot various aspects of the weather vs. 
+                latitude.  Factors we looked included: temperature, cloudiness, wind speed, and humidity.  This site 
+                provides the source data and visualizations created as part of the analysis, as well as explanations 
+                and descriptions of any trends and correlations witnessed.
+            </p>
+
+            <!-- 2nd column-->
+            <div class="col-md-4"></div>
+            <h5 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
               style="font-size: larger"></h5>
-          <h5 class="display-4">Visualization</h5>
-          
-          <hr class="my-2">
+              <h5 class="display-4">Visualization</h5>
 
-          <h3 style="color:rgb(0, 217, 255)", style="font-family: Arial", style="font-size: larger">
-            <strong>
-            <img src="Resources/assets/images/Fig1.png"> 
-            <img src="Resources/assets/images/Fig2.png"> 
-            <img src="Resources/assets/images/Fig3.png"> 
-            <img src="Resources/assets/images/Fig4.png"> 
-            </strong></h3>
+  <div class="container">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Row #2: labels -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->  
+    <!-- Row with 2 columns -->
+  <div class="row">
 
+    <!-- First of two columns -->
+    <div class="col-md-6">
+      <h3 style="text-align:center;"> vs. Max Temperature</h3>
+      <img src="Resources/assets/images/Fig1.png"> 
+    </div>
 
+    <!-- Second of two columns -->
+    <div class="col-md-6">
+      <h3 style="text-align:center;"> vs. Humidity</h3>
+      <img src="Resources/assets/images/Fig2.png"> 
+    </div>
+  </div>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Row #4: labels & graphs -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->  
+    <!-- Row with 2 columns -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <h3 style="text-align:center;"> vs. Cloudiness</h3>
+        <img src="Resources/assets/images/Fig3.png"> 
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <h3 style="text-align:center;"> vs. Wind Speed</h3>
+        <img src="Resources/assets/images/Fig4.png"> 
+      </div>
+    </div>
+</div>   
+<!-- ------------------------------------------------------------------------- -->
+<!-- END CONTAINER -->
+<!-- ------------------------------------------------------------------------- -->
+
+            
               <!--
               <hr style="height:2px; border-width:0;color:rgb(17, 2, 2); background-color:gray">
-              -->
-
-          </div>
-        </div>
-      
+               -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!--  scripts for auto screen adjustments -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
