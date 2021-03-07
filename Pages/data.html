@@ -39,8 +39,11 @@
   <!-- NavBar: Data web page link -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <li class="nav-item">
+    <!-- {{../Pages/data.html}}  -->
+    
     <a class="nav-link" href="../Pages/data.html">Data</a>
   </li>
+
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
   <!-- NavBar: Home web page link -->
@@ -81,63 +84,35 @@
       
   <br>
   <br>
-  
-  <!-- ------------------------------------------------------------------------- -->
-  <!-- START TABLE RESPONSIVE LARGE DATA -->
-  <!-- ------------------------------------------------------------------------- -->
-    <div class="table-responsive-lg">
-    <table class="table">
-    
-    </table>
-  </div>
-  
-  <!-- ------------------------------------------------------------------------- -->
-  <!-- START TABLE RESPONSIVE SMALL DATA -->
-  <!-- ------------------------------------------------------------------------- -->
-  <div class="table-responsive-sm">
-    <table class="table">
-      ...
-    </table>
-  </div>
-
 
   <!-- ------------------------------------------------------------------------- -->
-  <!-- START CONTAINER TEMP (To be deleted) -->
+  <!-- START TABLE RESPONSIVE LARGE DATA -- using Bootstrap code -->
   <!-- ------------------------------------------------------------------------- -->
   <div class="container">
     <!-- Row 1  -->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-sm-6">
         <br>
         <br>
         <h2 style="color:rgb(65, 158, 135)">DATA</h2>
         <br>
-        <a href="../data_table.html">Data Table</a>
-        <br>
-        <!--
-        <img src="../Images/data_large.jpg" />
-        -->
-
-        <br>
-        <br>
+        <div class="table-responsive-lg">
+          <table class="../data_table.html">
+           </table>
+        </div>
+        <!----   insert data_table.html code -->
+        <a href="../data_table.html">Data Table -- click here to display the data table</a>
       </div>
     </div>
   </div>
-
-  <!--
-   div class="container" Row 2 -->
-
-    <!--
-    <div class="row">
-      <div class="col-md-12">
-        <h2 style="color:rgb(65, 158, 135)">DATA</h2>
-        <img src="../Images/data_small.jpg" />
-        <br>
-        <br>
-      </div>
-    </div>
+  
+  <!-- ------------------------------------------------------------------------- -->
+  <!-- START TABLE RESPONSIVE SMALL DATA -- using Bootstrap code -->
+  <!-- ------------------------------------------------------------------------- -->
+  <div class="table-responsive-sm">
+    <table class="../data_table.html">
+     </table>
   </div>
-  -->
 
        
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
