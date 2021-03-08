@@ -8,50 +8,56 @@
 </head>
 
 <body>
+
 <!-- ######################################################################################## -->
-<!-- Begin:  Navigation Bar setup -->
+<!-- Begin:  Navigation Bar -->
 <!-- ######################################################################################## -->
-<ul class="nav justify-content-end">
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <h3 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
+    style="font-size: larger"></h3>
   
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- NavBar: Plots dropdown -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
-            role="button" data-toggle="dropdown">Plots</a>  
-      <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-        <a class="dropdown-item" href="../Pages/maxtemperature.html">Max Temperature</a>
-        <a class="dropdown-item" href="../Pages/humidity.html">Humidity</a>
-        <a class="dropdown-item" href="../Pages/cloudiness.html">Cloudiness</a>
-        <a class="dropdown-item" href="../Pages/windspeed.html">Wind Speed</a> </div>
-        <div class="dropdown-divider"></div> 
-    </li>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-    <!-- NavBar: Comparison web page link -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
-     <li class="nav-item">
-      <a class="nav-link" href="../Pages/comparison.html">Comparison</a>
-    </li>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-    <!-- NavBar: Data web page link -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li class="nav-item">
-      <a class="nav-link" href="../Pages/data.html">Data</a>
-    </li>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-    <!-- NavBar: Home web page link -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <li class="nav-item">
-      <a class="dropdown-item" href="../index.html">Home</a>
-    </li>
+    <a href="../index.html" class="navbar-brand" style="color:rgb(14, 32, 82)"><h3>Latitude</h3></a> 
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class = "collapse navbar-collapse" id="navbarMenu">
   
-  </ul>
+    <ul class="navbar-nav ml-auto">
+       
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- NavBar: Plots dropdown -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
+             role="button" data-toggle="dropdown">Plots</a>  
+          <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
+           <a class="dropdown-item" href="../Pages/maxtemperature.html">Max Temperature</a>
+           <a class="dropdown-item" href="../Pages/humidity.html">Humidity</a>
+           <a class="dropdown-item" href="../Pages/cloudiness.html">Cloudiness</a>
+           <a class="dropdown-item" href="../Pages/windspeed.html">Wind Speed</a> 
+          </div>
+        </li>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <!-- NavBar: Comparison web page link -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <li class="nav-item">
+          <a class="nav-link" href="../Pages/comparison.html">Comparison</a>
+          </li>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <!-- NavBar: Data web page link -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/data.html">Data</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+  <!-- ######################################################################################## -->
+  <!-- End:  Navigation Bar -->
+  <!-- ######################################################################################## -->
+  <br><br>  
 
-  
-  <br>
   <!-- ------------------------------------------------------------------------- -->
   <!-- START CONTAINER -->
   <!-- ------------------------------------------------------------------------- -->
