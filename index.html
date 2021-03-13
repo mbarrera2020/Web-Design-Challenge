@@ -23,7 +23,7 @@
 <h3 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center">
 <br>
 <strong> Welcome to the Weather Data Plotting Website! </strong></h3>
-<img src="Images/weather.jpg" alt="Weather"> 
+<img src="Images/weather.JPG" class="center"> 
 <br><br>
 <h5>This is a Weather Data Plotting dashboard website using visualizations created from prior 
   projects. Individual pages have been created for each plot and a means to navigate between 
@@ -94,19 +94,22 @@
           <div class="col-md-12">
               <h3>Summary: Latitude vs. X </h3>
               <hr>
-              <div class="thumbnail">
-                  <img class="img-thumbnail float-left" src="Resources/assets/images/Fig1.png " 
-                  width="800" height="800">
-              </div>
-              <br><br>
-              <style> .parpad {padding-left: 900px; color: rgb(7, 7, 8); } </style> 
+              <!-- <div class="thumbnail"> -->
+                <!-- <img src="..." class="img-fluid img-thumbnail" alt="..."> -->
+
+                  <img class="img-fluid float-left p-3" src="Resources/assets/images/Fig1.png " 
+                  width="50%">
+              <!-- </div> -->
+                            
+              <!-- <style> .parpad {padding-left: 900px; color: rgb(7, 7, 8); } </style> -->
+
               <p class="parpad">
                 <br>
                 The purpose of this project was to analyze how weather changes as you get closer to the equator.  
                 To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
                 on over 500 cities. 
                 <br><br>
-                After assembling the dataset, we sued Matplotlib to plot various aspects of the weather vs. 
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
                 latitude.  Factors we looked included: temperature, cloudiness, wind speed, and humidity.  This site 
                 provides the source data and visualizations created as part of the analysis, as well as explanations 
                 and descriptions of any trends and correlations witnessed.
@@ -124,20 +127,20 @@
               <hr>
               <div class="row">
                   <div class="col-3 col-md-6">
-                      <a href="Pages/maxtemperature.html"><img src="Resources/assets/images/Fig1.png" 
-                          width="300" height="300"></a> 
+                      <a href="Pages/maxtemperature.html"><img class = "img-fluid" src="Resources/assets/images/Fig1.png" 
+                          width="100%"></a> 
                   </div>
                   <div class="col-3 col-md-6">
                       <a href="Pages/humidity.html"><img src="Resources/assets/images/Fig2.png" 
-                        width="300" height="300"></a> 
+                        width="100%"></a> 
                   </div>
                   <div class="col-3 col-md-6">
                       <a href="Pages/cloudiness.html"><img src="Resources/assets/images/Fig3.png" 
-                        width="300" height="300"></a> 
+                        width="100%"></a> 
                   </div>
                   <div class="col-3 col-md-6">
                       <a href="Pages/windspeed.html"><img src="Resources/assets/images/Fig4.png" 
-                        width="300" height="300"></a> 
+                        width="100%"></a> 
                   </div>
               </div>
           </div>
@@ -148,22 +151,6 @@
 <!-- ######################################################################################## -->
 <!-- END:  CONTAINER -->
 <!-- ######################################################################################## -->
-
-<div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" 
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!--  scripts for auto screen adjustments -->
